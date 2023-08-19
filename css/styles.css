@@ -1,0 +1,65 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.homeImage {
+  background: url('https://images.unsplash.com/photo-1501612780327-45045538702b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80')
+  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 70vh;
+  padding-top: 110px;
+}
+.feature-top {
+  position: relative;
+  top: -90px;
+}
+.bold {
+  font-weight: 900!important;
+}
+header.homeBg {
+  margin: 0 0;
+  background: #000000;
+  height: 700px;
+  position: relative;
+}
+
+header.homeBg::after {
+  position: absolute;
+  content: "";
+  height: 25%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(#000000 0%, transparent 100%);
+}
+
+header.homeBg::before {
+  position: absolute;
+  content: "";
+  height: 25%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(#000000 0%, white 100%);
+}
+.text-white {
+  color: white;
+}
+.zoom {
+  transition: transform .5s; /* Animation */
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.zoom:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+footer {
+  margin-top: -60px;
+}
